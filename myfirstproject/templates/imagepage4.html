@@ -1,0 +1,24 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block title %}My Image Page5{% endblock %}
+{% block content %}
+<div class='container-fluid'>
+    <div class='row'>
+        <!-- <div class='col-md-6' style="margin 0 auto;">
+            <img src='{% static 'django.jpg' %}' class="img-fluid" alt="Responsive image">
+        </div> -->
+        <div class='col-4'>
+            <img src='{% static 'django.jpg' %}' class="img-fluid" alt="Responsive image">
+        </div>
+        <div class='col-4'>
+            <img src='{% static 'python.jpg' %}' class="img-fluid" alt="Responsive image">
+        </div>
+        <div class='col-4'>
+            <img src='{% static 'django.jpg' %}' class="img-fluid" alt="Responsive image">
+        </div>
+        <!-- <div class='col-md-3'>
+            <img src='{% static 'python.jpg' %}' class="img-fluid" alt="Responsive image">
+        </div> -->
+    </div>
+</div>
+{% endblock %}
